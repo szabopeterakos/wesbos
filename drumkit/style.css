@@ -1,0 +1,27 @@
+body {
+    background-color: dimgray;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20rem;
+    top: 5rem;
+    position: relative;
+}
+
+.keys {
+    border: 2px solid black;
+    width: 2.5rem;
+    height: 2.5rem;
+    text-align: center;
+    line-height: 2.5rem;
+    transition: all .1s;
+    opacity: 1;
+    border-radius: 4px;
+}
+
+.play {
+    transform: scale(1.2);
+    opacity: 0.2;
+}
