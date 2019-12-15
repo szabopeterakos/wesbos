@@ -1,0 +1,42 @@
+body {
+    background-color: dimgray;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    top: 10rem;
+    position: relative;
+}
+
+.clock {
+    border: 6px solid white;
+    width: 6.5rem;
+    height: 6.5rem;
+    border-radius: 4px;
+    position: absolute;
+}
+
+.tick {
+    height: 4px;
+    background-color: orange;
+    width: 50%;
+    top: 50%;
+    position: absolute;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.08s;
+    transition-timing-function: cubic-bezier(0.1, 1.7, 0.58, 1);
+}
+
+.center {
+    height: 2px;
+    width: 2px;
+    background-color: #a58a63;
+    border: #a58a63 1px solid;
+    border-radius: 3px;
+    top: 50%;
+    right: 50%;
+    transform: translate(2px, 0px);
+    position: absolute;
+}

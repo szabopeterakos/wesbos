@@ -1,0 +1,41 @@
+:root {
+    --base: orange;
+    --spacing: 10px;
+    --blur: 20px;
+}
+
+body {
+    background-color: #04191e;
+    font-family: "Source Sans Pro", sans-serif;
+    color: white;
+}
+
+h1 {
+    margin: 10px 0;
+}
+
+.h1 {
+    color: var(--base);
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    right: 25%;
+    position: absolute;
+}
+
+.controlls {
+    line-height: 5rem;
+    height: 5rem;
+}
+
+img {
+    padding: var(--spacing);
+    filter: blur(var(--blur));
+    background-color: var(--base);
+    height: 300px;
+}

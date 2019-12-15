@@ -23,6 +23,13 @@ function clearPlayingAnimation(e) {
     this.classList.remove("play");
 }
 
+clearPlayingAnimation2 = e => {
+    if (e.propertyName !== "transform") {
+        return;
+    }
+    this.classList.remove("play");
+};
+
 window.addEventListener("keydown", hitProperKey);
 
 keys.forEach(k => {
