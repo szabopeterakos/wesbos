@@ -1,0 +1,25 @@
+:root {
+    --base: orange;
+    --fontcolor: white;
+}
+
+body {
+    background-color: #04191e;
+    font-family: "Source Sans Pro", sans-serif;
+    color: var(--fontcolor);
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--fontcolor);
+}
+
+div {
+    text-align: center;
+}
