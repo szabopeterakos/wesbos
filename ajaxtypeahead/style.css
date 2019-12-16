@@ -1,0 +1,19 @@
+body,
+p {
+    background-color: lightsalmon;
+    font-family: "Pacifico", cursive;
+    box-sizing: border-box;
+    color: white;
+    margin: 0;
+}
+
+datalist{
+    display: inline;
+    visibility: visible;
+    opacity: 100;
+}
+
+.highlight{
+    background-color: aquamarine;
+    color: red !important;
+}
