@@ -1,0 +1,14 @@
+body {
+    background-color: dimgray;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+canvas {
+    border: 5px solid white;
+}
