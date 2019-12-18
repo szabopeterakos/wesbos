@@ -1,0 +1,53 @@
+:root {
+    --c1: rgb(255, 166, 0);
+    --c2: rgb(218, 216, 212);
+}
+
+body {
+    background-color: var(--c1);
+    font-family: "Source Sans Pro", sans-serif;
+    color: var(--c2);
+    display: flex;
+    justify-content: center;
+}
+
+p,
+span {
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+}
+
+.item {
+    display: flex;
+    position: relative;
+    width: 10rem;
+    background: white;
+    border-radius: 3px;
+    margin: 1px 0;
+    box-shadow: 0px 1px rgb(69, 69, 69);
+}
+
+.item > p {
+    flex: 3;
+    line-height: 2rem;
+    text-align: left;
+    color: darkgoldenrod;
+}
+
+.item > span {
+    flex: 1;
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.selected {
+    opacity: 0.4;
+}
