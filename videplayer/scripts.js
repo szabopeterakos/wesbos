@@ -8,6 +8,7 @@ const speed = document.querySelector("#playbackRate");
 const skip = document.querySelector("#skip");
 const skipMore = document.querySelector("#skipMore");
 const progressbarFilled = document.querySelector(".progressbarFilled");
+const progressbar = document.querySelector(".progressbar");
 
 function handlePlay() {
     if (video.paused) {
@@ -50,6 +51,14 @@ function handleKeyboard(e) {
     }
 }
 
+function handleProgressSlider(e){
+  console.log(this.offsetWidth);
+  console.dir(e.offsetX);
+  const percentage = (e.offsetX / this.offsetWidth) * 100;
+  progressbarFilled.style.width = `${percentage}%`;
+  video.currentTime = (percentage/100) * video.duration;
+}
+
 video.addEventListener("timeupdate", handleProgress);
 video.addEventListener("click", handleKeyboard);
 play.addEventListener("click", handlePlay);
@@ -58,3 +67,4 @@ skipMore.addEventListener("click", handleSkip);
 speed.addEventListener("change", handleSlider);
 volume.addEventListener("change", handleSlider);
 page.addEventListener("keydown", handleKeyboard);
+progressbar.addEventListener("click", handleProgressSlider);
