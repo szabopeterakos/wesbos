@@ -1,0 +1,60 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  color: rebeccapurple;
+  display: flex;
+  justify-content: space-around;
+  background-color: lightslategray;
+  background-image: url('https://images.unsplash.com/photo-1575868836100-e88e4ff63d93?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1500&ixlib=rb-1.2.1&q=80&w=1500');
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.logo {
+  background-image: url('./logo.png');
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+  margin: 20px auto;
+}
+
+.form {
+  width: 300px;
+  height: 400px;
+  background: rgba(49, 49, 49, 0.5);
+  margin: auto;
+}
+
+.formcontent {
+  margin: auto;
+  margin-top: 2%;
+  width: 96%;
+  height: 97%;
+  background: rgba(255, 255, 255, 0.9);
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.checkboxcontainer {
+  display: flex;
+  padding: 5px 0;
+}
+
+form {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.cc {
+  height: 318px;
+}
+
+input[type='checkbox'] {
+  margin-right: 17px;
+}
