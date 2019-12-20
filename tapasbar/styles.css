@@ -1,6 +1,8 @@
 body {
   font-family: 'Roboto', sans-serif;
-  color: rebeccapurple;
+  color: #262636;
+  font-weight: 600;
+  font-size: large;
   display: flex;
   justify-content: space-around;
   background-color: lightslategray;
@@ -19,6 +21,7 @@ body {
   height: 100px;
   width: 100px;
   margin: 20px auto;
+  filter: drop-shadow(2px 4px 6px black);
 }
 
 .form {
@@ -42,6 +45,7 @@ body {
 .checkboxcontainer {
   display: flex;
   padding: 5px 0;
+  align-items: center;
 }
 
 form {
@@ -52,9 +56,59 @@ form {
 }
 
 .cc {
-  height: 318px;
+  height: 290px;
 }
 
 input[type='checkbox'] {
   margin-right: 17px;
+}
+
+/* /.checkbox */
+
+input[type='checkbox'] {
+  height: 20px;
+  width: 20px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border-radius: 50%;
+  outline: none;
+  transition-duration: 0.3s;
+  cursor: pointer;
+  border: 2px solid #34495e;
+  background-color: #fff;
+}
+
+input[type='checkbox']:checked {
+  border: 2px solid #34495e;
+  background-color: #f9bf03;
+}
+
+input[type='checkbox']:active {
+  border: 2px solid #34495e;
+}
+
+input[type='checkbox']:hover {
+  transform: scale(1.2);
+}
+
+/* button  */
+button[type='submit'] {
+  color: #262636;
+  border: 0;
+  background-color: #fdca01;
+  padding: 18px 0;
+  font-family: 'Roboto';
+  font-weight: 600;
+  font-size: larger;
+  border-radius: 3px;
+  transition: all 0.2s;
+}
+
+button[type='submit']:hover {
+  color: #fdca01;
+  border-radius: 3px;
+  background-color: #262636;
+  cursor: pointer;
 }
