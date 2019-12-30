@@ -4,10 +4,12 @@ const texts = document.querySelectorAll("body > h1,p");
 async function animate(el) {
     const text = el.innerText;
     let displayedText = "";
+    const { min, max } = el.dataset;
+    console.log("TCL: animate -> min, max", min, max);
     for (char of text) {
         displayedText += char;
         el.innerHTML = displayedText;
-        await wait(randomTimeout());
+        await wait(randomTimeout(min, max));
     }
 
     console.log(text);
