@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css?family=Pompiere&display=swap");
+
+body {
+    background-image: url("https://images.unsplash.com/photo-1577498863556-db47a7f74167?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1500&ixlib=rb-1.2.1&q=80&w=1500");
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-rows: 33% auto;
+
+    font-family: "Pompiere", cursive;
+}
+
+.container {
+    background: #00000024;
+    width: 50vw;
+    min-height: 33vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    /* border-top-right-radius: 15px; */
+    /* border-bottom-left-radius: 15px; */
+    border-radius: 3px 15px;
+}
+
+.btn {
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 0px;
+    margin: 1rem 1rem;
+    height: 1.5rem;
+    transition: all 0.2s;
+    user-select: none;
+
+    /* border-top-right-radius: 5px; */
+    /* border-bottom-left-radius: 5px; */
+    border-radius: 1px 5px;
+    font-family: "Pompiere", cursive;
+    font-size: 20px;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:active {
+    background-color: 00000024;
+    transform: scale(1.01);
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.jokesContainer {
+    position: relative;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    min-height: 18vh;
+    display: grid;
+
+    margin: 1rem 1rem 0rem 1rem;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    line-height: 2.2rem;
+    font-size: 24px;
+}
+
+.joke {
+    margin: 1rem 1rem;
+}
+
+img {
+    width: 30%;
+    filter: saturate(1.5) invert(1);
+    pointer-events: none;
+    user-select: none;
+}
+
+/* loading animation */
+.hide {
+    opacity: 0;
+}
+
+.loading > span {
+    transition: all 0.5s;
+}
