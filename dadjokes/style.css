@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Pompiere&display=swap");
 
 body {
+    --color: #166e6d4a;
     background-image: url("https://images.unsplash.com/photo-1577498863556-db47a7f74167?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1500&ixlib=rb-1.2.1&q=80&w=1500");
     width: 100vw;
     height: 100vh;
@@ -14,7 +15,7 @@ body {
 }
 
 .container {
-    background: #00000024;
+    background: var(--color);
     width: 50vw;
     min-height: 33vh;
     display: flex;
@@ -28,7 +29,7 @@ body {
 
 .btn {
     background-color: white;
-    color: black;
+    color: #273f3f;
     border: none;
     border-radius: 0px;
     margin: 1rem 1rem;
@@ -39,12 +40,18 @@ body {
     /* border-top-right-radius: 5px; */
     /* border-bottom-left-radius: 5px; */
     border-radius: 1px 5px;
-    font-family: "Pompiere", cursive;
-    font-size: 20px;
+    /* font-family: "Pompiere", cursive; */
+    font-size: 18px;
 }
 
 .btn:focus {
     outline: none;
+}
+
+.btn:hover {
+    background-color: #273f3f;
+    transform: scale(1.01);
+    color: white;
 }
 
 .btn:active {
