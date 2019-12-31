@@ -39,7 +39,7 @@ body {
 }
 
 .app :is(button, input, select, textarea) {
-    margin: 0;
+    margin: 1px;
     text-align: center;
     font-weight: 600;
     border: 0;
