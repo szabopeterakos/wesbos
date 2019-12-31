@@ -17,7 +17,7 @@ body {
 .container {
     background: var(--color);
     width: 50vw;
-    min-height: 33vh;
+    min-height: 25vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

@@ -1,6 +1,6 @@
 console.log("dad fun");
 
-const JOKES_MIN_LENGTH = 120;
+const JOKES_MIN_LENGTH = 110;
 const dqs = document.querySelector.bind(document);
 const dqsa = document.querySelectorAll.bind(document);
 const [dot1, dot2, dot3] = dqsa(".loading > span");
@@ -43,6 +43,7 @@ function loadJoke() {
     );
     spinnerEl.classList.remove("hidden");
     jokeEl.classList.add("hidden");
+    buttonEl.classList.add("hidden");
     loadingAnimation();
 }
 
@@ -50,6 +51,7 @@ function arivedJoke() {
     loadingEl.dispatchEvent(new CustomEvent("jokeIsArrived", { detail: true }));
     jokeEl.classList.remove("hidden");
     spinnerEl.classList.add("hidden");
+    buttonEl.classList.remove("hidden");
 }
 
 async function getRandomJoke() {
